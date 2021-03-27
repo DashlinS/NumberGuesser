@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  color:white;
+  font-family: cursive;
+}
+
+.hotColor {
+  color: red;
+}
+.coldColor {
+  color: blue;
+}
+a:active, a:link, a:visited {
+  color:inherit;
+}
+
+main {
+  background:url(../images/hotcoldbackground.jpg) no-repeat center;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  color: rgb(220, 12, 220);
+}
+h4 {
+  font-size: 1.5rem;
+}
+
+h5{
+  height: 30px;
+  width: 200px;
+
+  font-size: 1.3rem;
+}
+
+.messageSection h5 {
+  text-align: center;
+    /* border: 1px solid white; */
+    width: 100%;
+}
+
+.container {
+  width:70%;
+  margin: 0 auto;
+  height: 600px;
+  border: 3px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color:rgb(0, 0, 0);
+  border-radius: 20px;
+}
+
+input {
+  height: 70px;
+  width: 150px;
+  font-size: 5rem;
+  text-align: center;
+  border: 4px solid white;
+  border-radius: 10px;
+  margin: 10px 0px;
+  color: black;
+}
+
+button{
+  height: 50px;
+  width: 100px;
+  font-size: 2rem;
+  border-radius: 10px;
+  color:black;
+  background-image: linear-gradient(90deg, #93f1ff, #2d6fe0, #381dec, #e2c832, #d45c24, #e01717);
+  background-size: 400% 400%;
+  animation: change 12s infinite alternate;
+}
+
+@keyframes change{
+  0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+button:focus, input:focus {
+  outline:none;
+}
+
+.messageSection {
+  /* border: 3px solid white; */
+  height: 120px;
+  width: 100%;
+  font-size: 2rem;
+  background-color:rgb(0, 0, 0);
+}
+
+.remaining {
+  /* border: 3px solid white; */
+  height: 60px;
+  width: 400px;
+  font-size: 3rem;
+}
+
+.reset {
+  /* border: 3px solid white; */
+  height: 50px;
+  width: 100px;
+  font-size: 2rem;
+  color: rgb(220, 12, 220);
+}
+
+.messageSection h3 {
+  color:rgb(12, 213, 220);
+}
